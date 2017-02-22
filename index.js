@@ -29,6 +29,20 @@ class InFrontOfYou extends React.Component {
   }
 }
 
+class ButcherShop extends React.Component {
+  render() {
+    return React.createElement('div', {className: 'butcher-shop'}, [
+      React.createElement('p', {}, "Hello! We have the following products for sale today:"),
+      React.createElement('ul', {}, [
+        React.createElement('li', {}, 'Tenderloin'),
+        React.createElement('li', {}, 'Short ribs'),
+        React.createElement('li', {}, 'Beef shin'),
+        React.createElement('li', {}, 'Ribeye'),
+      ]),
+    ]);
+  }
+}
+
 ReactDOM.render(
   React.createElement('div', {}, [
     React.createElement(OlderCoaster),
