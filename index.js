@@ -28,8 +28,12 @@ class InFrontOfYou extends React.Component{
   render() {
     return React.createElement('div',{},
       React.createElement('p', {}, "You shouldn't look too far."),
-      React.createElement('p', {}, "Sometimes, the solution is <strong>right in front of you.</strong>" )
-      )//div
+      React.createElement('p', {}, 
+        [
+          "Sometimes, the solution is ",
+           React.createElement('strong', {}, 'right in front of you.')
+        ]) // 2nd p element with the strong text
+      ) //div
   } // render
 } // class
 
@@ -47,6 +51,20 @@ class ButcherShop extends React.Component{
     ) //div
   } //render 
 } // class 
+
+
+// was supposed to use MAP function! here is the answer from the lab 
+// class ButcherShop extends React.Component {
+//   render() {
+//     return React.createElement('div', { className: 'butcher-shop' }, [
+//       React.createElement('p', {}, 'Hello! We have the following products for sale today:'),
+//       React.createElement('ul', {},
+//         BUTCHER_PRODUCTS.map(product => React.createElement('li', {}, product))
+//       )
+//     ]);
+//   }
+// }
+
 
 
 ReactDOM.render(
