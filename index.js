@@ -8,12 +8,11 @@ const BUTCHER_PRODUCTS = [
 const OlderCoaster = React.createClass({
   render() {
     return React.createElement('div', { className: 'oldercoaster'}, [
-      React.createElement('p', {}, 'Two grannies having the time of their life'),
+      React.createElement('p', {}, 'Two grannies having the time of their life!'),
       React.createElement('p', {}, 'Passengers:'),
-      React.createElement('ul', {},
-        [
+      React.createElement('ul', {}, [
           React.createElement('li', {}, 'Agnes'),
-          React.createElement('ul', {}, 'Muriel')
+          React.createElement('li', {}, 'Muriel'),
         ]),
     ])
   }
@@ -22,8 +21,11 @@ const OlderCoaster = React.createClass({
 class InFrontOfYou extends React.Component {
   render() {
     return React.createElement('div', {},  [
-      React.createElement('p', {}, "You shouldn't look too far"),
-      React.createElement('p', {}, "Sometimes the solution is <strong>right in front of you.</strong>"),
+      React.createElement('p', {}, "You shouldn't look too far."),
+      React.createElement('p', {}, [
+        'Sometimes, the solution is ',
+        React.createElement('strong', {}, 'right in front of you.')
+      ]),
     ])
   }
 }
@@ -32,8 +34,8 @@ class ButcherShop extends React.Component {
   render() {
     return React.createElement('div', { className: 'butcher-shop'},
     [
-      React.createElement('p', {}, 'Hello, we have the following products for sale today:'),
-      React.createElement('ul', {}, BUTCHER_PRODUCTS.map(n => React.createElement('li', {}, n ))
+      React.createElement('p', {}, 'Hello! We have the following products for sale today:'),
+      React.createElement('ul', {}, BUTCHER_PRODUCTS.map(n => React.createElement('li', {}, n )))
     ])
   }
 }
