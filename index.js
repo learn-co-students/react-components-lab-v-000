@@ -34,11 +34,9 @@ class ButcherShop extends React.Component {
   render () {
     return React.createElement('div', {className: 'butcher-shop'}, [
       React.createElement('p', {}, "Hello! We have the following products for sale today:"),
-      React.createElement('ul', {}, [
-        BUTCHER_PRODUCTS.map(function(meat) {
-          return React.createElement('li', {}, meat)
-        })
-      ])
+      React.createElement('ul', {}, 
+        BUTCHER_PRODUCTS.map(meat => React.createElement('li', {}, meat))
+      )
     ])
   }
 }
