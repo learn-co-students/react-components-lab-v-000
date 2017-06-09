@@ -7,7 +7,7 @@
     "mocha": "^3.2.0",
     "react-scripts": "^1.0.7",
     "react-test-renderer": "^15.5.4",
-    "webpack": "^1.14.0",
+    "webpack": "^2.6.1",
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
@@ -32,5 +32,20 @@
     "dev:hot": "webpack-dev-server --hot --inline --progress --colors --watch --display-error-details --display-cached --content-base ./",
     "test:watch": "npm run test -- --watch",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "## Overview",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinladkins/react-components-lab-v-000.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinladkins/react-components-lab-v-000/issues"
+  },
+  "homepage": "https://github.com/kevinladkins/react-components-lab-v-000#readme"
 }
