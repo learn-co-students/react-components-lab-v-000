@@ -14,8 +14,8 @@ export class OlderCoaster extends React.Component {
         React.createElement('p', {}, 'Two grannies having the time of their life!'),
         React.createElement('p', {}, 'Passengers:'),
         React.createElement('ul', {}, [
-            react.createElement('li', {}, 'Agnes'),
-            react.createElement('li', {}, 'Muriel'),
+            React.createElement('li', {}, 'Agnes'),
+            React.createElement('li', {}, 'Muriel'),
         ])
     );
   }
@@ -34,7 +34,7 @@ export class InFrontOfYou extends React.Component {
 export class ButcherShop extends React.Component {
     render() {
         return React.createElement('div', {className: 'butcher-shop'},
-        React.createElement('p', {}, 'Hello! We have the following products for sale today:')
+        React.createElement('p', {}, 'Hello! We have the following products for sale today:'),
         React.createElement('ul', {},
             BUTCHER_PRODUCTS.map(product =>
               React.createElement('li', {}, product))
