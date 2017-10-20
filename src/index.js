@@ -1,4 +1,3 @@
-// Make sure to import React and ReactDOM
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -38,7 +37,7 @@ export class ButcherShop extends React.Component {
     return React.createElement('div', { className: 'butcher-shop'},
       React.createElement('p', {}, 'Hello! We have the following products for sale today:'),
       React.createElement('ul', {},
-        BUTCHER_PRODUCTS.map(product => React.createElement('li', {}, 'product'))
+        BUTCHER_PRODUCTS.map(product => React.createElement('li', {}, product))
       )
     )
   }
