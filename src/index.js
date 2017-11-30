@@ -1,22 +1,22 @@
-// Make sure to import React and ReactDOM
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const BUTCHER_PRODUCTS = [
-  'Tenderloin',
-  'Short ribs',
-  'Beef shin',
-  'Ribeye'
-];
+const meInReact = React.createElement("div", {className: "me"}, [
+  React.createElement("h1", {}, "An Awesome Person"),
+  React.createElement("p", {}, "Who is learning React"),
+  React.createElement("ul", {className: "my-interests"}, [
+    React.createElement("li", {}, "JavaScript"),
+    React.createElement("li", {}, "React"),
+    React.createElement("li", {}, "Movies"),
+    React.createElement("li", {}, "Ice cream")
+  ])
+]);
 
-// Define these exported classes
-export class OlderCoaster extends React.Component {};
-export class InFrontOfYou extends React.Component {};
-export class ButcherShop extends React.Component {};
+// IMPORTANT!!!! uncomment the lines below to make your tests work
 
 ReactDOM.render(
-  React.createElement('div', {}, [
-    React.createElement(OlderCoaster),
-    React.createElement(InFrontOfYou),
-    React.createElement(ButcherShop)
-  ]),
+  meInReact,
   document.getElementById('global')
 );
+
+export default meInReact
