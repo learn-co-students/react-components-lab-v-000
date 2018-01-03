@@ -35,10 +35,10 @@ class InFrontOfYou extends React.Component {
 
 class ButcherShop extends React.Component {
   render () {
-    var products = []; 
-    BUTCHER_PRODUCTS.forEach(function(product) {
-      products.push(React.createElement('li', {}, product));  
-    }); 
+    var products = BUTCHER_PRODUCTS.map(function(product) {
+      return React.createElement('li', {}, product);   
+    });  
+
     return (
       React.createElement('div', {className: 'butcher-shop'}, [
         React.createElement('p', {}, "Hello! We have the following products for sale today:"),  
