@@ -52,19 +52,3 @@ ReactDOM.render(
   ]),
   document.getElementById('global')
 );
-
-
-
-
-
-
-
-class ShoppingList extends React.Component {
-  render() {
-    return React.createElement('ul', {}, [
-      React.createElement('li', {}, 'Bananas'),
-      React.createElement('li', {}, 'Vanilla ice cream'),
-      React.createElement('li', {}, 'Chocolate'),
-    ]);
-  }
-}
