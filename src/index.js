@@ -42,8 +42,6 @@ export class ButcherShop extends React.Component {
   }
 };
 
-
-
 ReactDOM.render(
   React.createElement('div', {}, [
     React.createElement(OlderCoaster),
