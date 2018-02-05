@@ -38,7 +38,7 @@ export class ButcherShop extends React.Component {
     return (
       React.createElement('div', { className: "butcher-shop" }, [
         pMaker('Hello! We have the following products for sale today:'),
-        React.createElement('ul', {}, BUTCHER_PRODUCTS.map(bp => <li>{bp}</li>))
+        React.createElement('ul', {}, BUTCHER_PRODUCTS.map(bp => React.createElement('li', {}, bp))
       ])
     )}
 };
