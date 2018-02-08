@@ -11,10 +11,6 @@ const BUTCHER_PRODUCTS = [
   'Ribeye'
 ];
 
-const mappedProducts = BUTCHER_PRODUCTS.map((product) =>
-  <li>{product}</li>
-  )
-
 
 // Define these exported classes
 export class OlderCoaster extends React.Component {
@@ -43,8 +39,10 @@ export class ButcherShop extends React.Component {
   render() {
     return React.createElement('div', {className: 'butcher-shop'}, 
       React.createElement('p', {}, 'Hello! We have the following products for sale today:'),
-      React.createElement('ul', {}, mappedProducts)
+      React.createElement('ul', {}, 
+        BUTCHER_PRODUCTS.map(product => React.createElement('li', {}, product))
       )
+    )
   }
 };
 
