@@ -26,12 +26,25 @@ export class OlderCoaster extends React.Component {
 
 export class InFrontOfYou extends React.Component {
   render() {
-    return <h1> Hi </h1>
+    return React.createElement('div', {},
+      React.createElement('p', {}, 'You shouldn\'t look too far.'),
+      React.createElement('p', {}, 'Sometimes, the solution is right in front of you.'),
+    )
   }
 };
+
 export class ButcherShop extends React.Component {
   render() {
-    return <h1> Hi </h1>
+    return React.createElement('div', { className: "butcher-shop" },
+      React.createElement('p', {}, 'Hello! We have the following products for sale today:'),
+      React.createElement('ul', {}, 
+      [
+        React.createElement('li', {}, 'Tenderloin'),
+        React.createElement('li', {}, 'Short ribs'),
+        React.createElement('li', {}, 'Beef shin'),
+        React.createElement('li', {}, 'Ribeye'),
+      ])
+    )
   }
 };
 
