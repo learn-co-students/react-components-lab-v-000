@@ -10,41 +10,70 @@ const BUTCHER_PRODUCTS = [
 
 // Define these exported classes
 export class OlderCoaster extends React.Component {
-  // your code here
-  render() {
-    return React.createElement('div', {className: "oldercoaster"},
-      React.createElement('p', {}, "Two grannies having the time of their life!"),
-      React.createElement('p', {}, "Passengers:"),
-      React.createElement('ul', {},
-        [
-          React.createElement('li', {}, 'Agnes'),
-          React.createElement('li', {}, 'Muriel')
-        ]
-      )
-    );
+  render () {
+    return (
+      <div className="oldercoaster">
+        <p>Two grannies having the time of their life!</p>
+        <p>Passengers:</p>
+        <ul>
+          <li>Agnes</li>
+          <li>Muriel</li>
+        </ul>
+      </div>
+    )
   }
+  // render() {
+  //   return React.createElement('div', {className: "oldercoaster"},
+  //     React.createElement('p', {}, "Two grannies having the time of their life!"),
+  //     React.createElement('p', {}, "Passengers:"),
+  //     React.createElement('ul', {},
+  //       [
+  //         React.createElement('li', {}, 'Agnes'),
+  //         React.createElement('li', {}, 'Muriel')
+  //       ]
+  //     )
+  //   );
+  // }
 }
 
 export class InFrontOfYou extends React.Component {
   // your code here
-  render() {
-    return React.createElement('div', {},
-      React.createElement('p', {}, "You shouldn't look too far."),
-      React.createElement('p', {}, "Sometimes, the solution is right in front of you.")
-    );
+  render () {
+    return (
+      <div>
+        <p>You shouldn't look too far.</p>
+        <p>Sometimes, the solution is right in front of you.</p>
+      </div>
+    )
   }
+  // render() {
+  //   return React.createElement('div', {},
+  //     React.createElement('p', {}, "You shouldn't look too far."),
+  //     React.createElement('p', {}, "Sometimes, the solution is right in front of you.")
+  //   );
+  // }
 }
 
 export class ButcherShop extends React.Component {
   // your code here
   render() {
-    return React.createElement('div', {className: "butcher-shop"},
-      React.createElement('p', {}, "Hello! We have the following products for sale today:"),
-      React.createElement('ul', {},
-        BUTCHER_PRODUCTS.map(meat => React.createElement('li', {}, meat))
-      )
-    );
+    return (
+      <div className="butcher-shop">
+        <p>Hello! We have the following products for sale today:</p>
+        <ul>
+          {BUTCHER_PRODUCTS.map(meat => <li>{meat}</li>)}
+        </ul>
+      </div>
+    )
   }
+  // render() {
+  //   return React.createElement('div', {className: "butcher-shop"},
+  //     React.createElement('p', {}, "Hello! We have the following products for sale today:"),
+  //     React.createElement('ul', {},
+  //       BUTCHER_PRODUCTS.map(meat => React.createElement('li', {}, meat))
+  //     )
+  //   );
+  // }
 }
 
 
