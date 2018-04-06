@@ -35,7 +35,6 @@ export class OlderCoaster extends React.Component {
         <ul>
           <Grannie content={"Agnes"}/>
           <Grannie content={"Muriel"}/>
-
           </ul>
         </div>
     )
