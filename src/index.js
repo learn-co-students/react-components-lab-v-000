@@ -15,6 +15,15 @@ const products = [
   <li>{BUTCHER_PRODUCTS[3]}</li>
 ]
 
+class Grannie extends React.Component {
+  render() {
+    return (
+      <li>
+        {this.props.content}
+      </li>
+    )
+  }
+}
 
 export class OlderCoaster extends React.Component {
   render() {
@@ -24,8 +33,9 @@ export class OlderCoaster extends React.Component {
         <p>Two grannies having the time of their life!</p>
         <p>Passengers:</p>
         <ul>
-          <li>Agnes</li>
-          <li>Muriel</li>
+          <Grannie content={"Agnes"}/>
+          <Grannie content={"Muriel"}/>
+
           </ul>
         </div>
     )
