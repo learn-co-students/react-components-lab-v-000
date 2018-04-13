@@ -1,5 +1,3 @@
-import('React')
-import('ReactDOM')
 
 const BUTCHER_PRODUCTS = [
   'Tenderloin',
