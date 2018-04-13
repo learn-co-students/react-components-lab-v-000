@@ -41,7 +41,7 @@ export class ButcherShop extends React.Component {
       <div className="butcher-shop">
         <p>Hello! We have the following products for sale today:</p>
         <ul>
-          { BUTCHER_PRODUCTS.map(p =>  <li></li>) }
+          { BUTCHER_PRODUCTS.map(p => <li>{p}</li>) }
         </ul>
       </div>
     )
@@ -52,6 +52,7 @@ export class ButcherShop extends React.Component {
 ReactDOM.render(
   <div>
     render your components here! Refer back to the previous README if you are lost
+    <ButcherShop/>
   </div>,
   document.getElementById('root')
 )
