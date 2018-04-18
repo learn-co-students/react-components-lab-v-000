@@ -8,12 +8,7 @@ const BUTCHER_PRODUCTS = [
   'Ribeye'
 ]
 
-const products = [
-  <li>Tenderloin</li>,
-  <li>Short ribs</li>,
-  <li>Beef shin</li>,
-  <li>Ribeye</li>
-]
+
 
 // Define these exported classes
 export class OlderCoaster extends React.Component {
@@ -47,7 +42,12 @@ export class InFrontOfYou extends React.Component {
 
 export class ButcherShop extends React.Component {
   // your code here
-
+  const products = [
+    <li>Tenderloin</li>,
+    <li>Short ribs</li>,
+    <li>Beef shin</li>,
+    <li>Ribeye</li>
+  ]
   render () {
     return (
       <div className="butcher-shop">
@@ -62,6 +62,6 @@ export class ButcherShop extends React.Component {
 
 
 ReactDOM.render(
-  ButcherShop,
+  <div> aiai </div>,
   document.getElementById('root')
 )
