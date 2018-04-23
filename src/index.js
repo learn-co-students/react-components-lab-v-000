@@ -1,3 +1,6 @@
+import React from "react"
+import ReactDOM from "react-dom"
+
 const BUTCHER_PRODUCTS = [
   'Tenderloin',
   'Short ribs',
@@ -25,7 +28,7 @@ export class InFrontOfYou extends React.Component {
   render(){
     return(
       <div>
-        <p>You shouldnt look too far.</p>
+        <p>You shouldn't look too far.</p>
         <p>Sometimes, the solution is right in front of you.</p>
       </div>
     )
@@ -33,13 +36,26 @@ export class InFrontOfYou extends React.Component {
 }
 
 export class ButcherShop extends React.Component {
-  // your code here
+  render() {
+    const products = BUTCHER_PRODUCTS.map((p, idx) => (<li key={idx}>{p}</li>))
+    return (
+      <div className="butcher-shop">
+        <p>Hello! We have the following products for sale today:</p>
+        <ul>
+          { products }
+        </ul>
+      </div>
+    )
+  }
 }
+
 
 
 ReactDOM.render(
   <div>
-    render your components here! Refer back to the previous README if you are lost
+  <OlderCoaster />
+      <InFrontOfYou />
+      <ButcherShop />
   </div>,
   document.getElementById('root')
 )
