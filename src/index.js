@@ -36,21 +36,32 @@ export class InFrontOfYou extends React.Component {
 }
 
 export class ButcherShop extends React.Component {
-  const products = BUTCHER_PRODUCTS.map((item,i) => (<li key={i}>{item}</li>))
-  render(){
-    <div class="butcher-shop">
-      <p>Hello! We have the following products for sale today:</p>
-      <ul>
-        {products}
-      </ul>
-    </div>
+  render() {
+    const products = BUTCHER_PRODUCTS.map((item, i) => (<li key={i}>{item}</li>))
+    return (
+      <div className="butcher-shop">
+        <p>Hello! We have the following products for sale today:</p>
+        <ul>
+          { products }
+        </ul>
+      </div>
+    )
   }
 }
 
+export class App extends React.Component {
+  render() {
+    return (
+      <div id="app">
+        <OlderCoaster />
+        <InFrontOfYou />
+        <ButcherShop />
+      </div>
+    )
+  }
+}
 
 ReactDOM.render(
-  <div>
-    render your components here! Refer back to the previous README if you are lost
-  </div>,
+  <App/>,
   document.getElementById('root')
 )
