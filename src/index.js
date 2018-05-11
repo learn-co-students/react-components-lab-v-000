@@ -41,14 +41,14 @@ export class InFrontOfYou extends React.Component {
 export class ButcherShop extends React.Component {
   // your code here
   render(){
+    const products = BUTCHER_PRODUCTS.map(function(p, id){
+      return <li>{p}<li>
+    })
     return (
       <div className="butcher-shop">
       <p>Hello! We have the following products for sale today:</p>
         <ul>
-          <li>Tenderloin</li>
-          <li>Short ribs</li>
-          <li>Beef shin</li>
-          <li>Ribeye</li>
+          {products}
         </ul>  
       </div>
     )
