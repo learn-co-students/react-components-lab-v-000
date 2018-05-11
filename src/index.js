@@ -42,7 +42,7 @@ export class ButcherShop extends React.Component {
   // your code here
   render(){
     const products = BUTCHER_PRODUCTS.map(function(p, id){
-      return <li>{p}<li>
+      return <li>{p}</li>
     })
     return (
       <div className="butcher-shop">
@@ -58,7 +58,9 @@ export class ButcherShop extends React.Component {
 
 ReactDOM.render(
   <div>
-    render your components here! Refer back to the previous README if you are lost
+    <OlderCoaster />
+    <InFrontOfYou />
+    <ButcherShop />
   </div>,
   document.getElementById('root')
 )
