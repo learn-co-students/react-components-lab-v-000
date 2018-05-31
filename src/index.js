@@ -22,13 +22,6 @@ export class OlderCoaster extends React.Component {
     </div>
     )
   }
-  // this function should return the JSX we want the DOM to render
-  // render() {
-  //   return (
-  //     <div>Hello!</div>
-  //   )
-  // }
-  //
 }
 
 export class InFrontOfYou extends React.Component {
@@ -43,6 +36,8 @@ export class InFrontOfYou extends React.Component {
   }
 }
 
+const meats = [<li>{BUTCHER_PRODUCTS[0]}</li>, <li>{BUTCHER_PRODUCTS[1]}</li>, <li>{BUTCHER_PRODUCTS[2]}</li>, <li>{BUTCHER_PRODUCTS[3]}</li>]
+
 export class ButcherShop extends React.Component {
   // your code here
   render(){
@@ -50,10 +45,7 @@ export class ButcherShop extends React.Component {
       <div class="butcher-shop">
       <p>Hello! We have the following products for sale today:</p>
       <ul>
-        <li>Tenderloin</li>
-        <li>Short ribs</li>
-        <li>Beef shin</li>
-        <li>Ribeye</li>
+        { meats }
       </ul>
     </div>
     )
