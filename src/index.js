@@ -41,7 +41,7 @@ export class InFrontOfYou extends React.Component {
 }
 
 export class ButcherShop extends React.Component {
-  const products = 
+  const products = BUTCHER_PRODUCTS.map((product, index) => (<li key={index}>{product}</li>))
   render() {
     return (
       <div className="butcher-shop">
