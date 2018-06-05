@@ -41,12 +41,13 @@ export class InFrontOfYou extends React.Component {
 }
 
 export class ButcherShop extends React.Component {
-  const products = BUTCHER_PRODUCTS.map((product, index) => (<li key={index}>{product}</li>))
   render() {
+    const products = BUTCHER_PRODUCTS.map((product, index) => (<li key={index}>{product}</li>))
     return (
       <div className="butcher-shop">
         <p>Hello! We have the following products for sale today:</p>
         <ul>
+          { products }
         </ul>
       </div>
     )
@@ -58,7 +59,9 @@ export class App extends React.Component {
   render() {
     return (
       <div id="app">
-
+        <OlderCoaster/>
+        <InFrontOfYou/>
+        <ButcherShop/>
       </div>
     )
   }
