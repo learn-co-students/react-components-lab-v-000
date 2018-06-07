@@ -48,7 +48,7 @@ describe('ButcherShop', () => {
     wrapper = shallow(React.createElement(ButcherShop));
   });
 
-  it('renders withouth crashing', () => {
+  it('renders without crashing', () => {
     const div = document.createElement('div');
     ReactDOM.render(<ButcherShop />, div);
   });
