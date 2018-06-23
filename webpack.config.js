@@ -7,11 +7,13 @@ var APP_DIR = path.resolve(__dirname, 'src/');
 module.exports = {
   entry: APP_DIR + '/index.js',
   devServer: {
-    hot: true,
-    inline: true,
-    port: 7700,
     historyApiFallback: true,
-  },
+    contentBase: './',
+    host: process.env.IP,
+    https: true,
+    port: process.env.PORT,
+    "public": "app.c9users.io" //no trailing slash
+    },
   resolve: {
     extensions: ['', '.js', '.jsx'],
   },
