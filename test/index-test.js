@@ -37,7 +37,7 @@ describe('InFrontOfYou', () => {
   });
 
   it('should have the right DOM markup', () => {
-    expect(wrapper.html()).to.equal(`<div><p>You shouldn&#x27;t look too far.</p><p>Sometimes, the solution is right in front of you.</p></div>`);
+    expect(wrapper.html()).to.equal(`<div><p>You shouldnt look too far.</p><p>Sometimes, the solution is right in front of you.</p></div>`);
   });
 });
 
@@ -75,7 +75,7 @@ describe('App', () => {
   });
 
   it('should contain the InFrontOfYou component', () => {
-    expect(wrapper.html()).to.include(`<div><p>You shouldn&#x27;t look too far.</p><p>Sometimes, the solution is right in front of you.</p></div>`)
+    expect(wrapper.html()).to.include(`<div><p>You shouldnt look too far.</p><p>Sometimes, the solution is right in front of you.</p></div>`)
   });
 
   it('should contain the ButcherShop component', () => {
