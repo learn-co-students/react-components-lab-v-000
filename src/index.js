@@ -22,22 +22,34 @@ export class OlderCoaster extends Component {
       </div>
     )
   }
-
-  // this function should return the JSX we want the DOM to render
-  // render() {
-  //   return (
-  //     <div>Hello!</div>
-  //   )
-  // }
-  //
 }
 
 export class InFrontOfYou extends Component {
-  // your code here
+  render(){
+    return(
+      <div>
+        <p>You shouldn't look too far.</p>
+        <p>Sometimes, the solution is right in front of you.</p>
+      </div>
+    )
+  }
 }
 
+let products = BUTCHER_PRODUCTS.map(function(p,i){
+  return <li>{p}</li>
+})
 export class ButcherShop extends Component {
-  // your code here
+  render(){
+    return(
+      <div class="butcher-shop">
+      <p>Hello! We have the following products for sale today:</p>
+      <ul>
+        {products}
+      </ul>
+
+      </div>
+    )
+  }
 }
 
 
@@ -45,6 +57,12 @@ export class App extends Component {
   render() {
     return (
       <div id="app">
+        <OlderCoaster/>
+        <InFrontOfYou/>
+        <ButcherShop/>
+
+
+
 
       </div>
     )
