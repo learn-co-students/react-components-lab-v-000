@@ -14,7 +14,7 @@ export class OlderCoaster extends Component {
   // this function should return the JSX we want the DOM to render
   render() {
     return (
-      <div class="oldercoaster">
+      <div className="oldercoaster">
         <p>Two grannies having the time of their life!</p>
         <p>Passengers:</p>
         <ul>
@@ -31,7 +31,7 @@ export class InFrontOfYou extends Component {
   render() {
     return (
       <div>
-        <p>You shouldn&#x27;t look too far.</p>
+        <p>You shouldn't look too far.</p>
         <p>Sometimes, the solution is right in front of you.</p>
       </div>
     )
@@ -40,14 +40,12 @@ export class InFrontOfYou extends Component {
 
 export class ButcherShop extends Component {
   render() {
+    const products = BUTCHER_PRODUCTS.map((product) => (<li>{ product }</li>))
     return (
       <div class="butcher-shop">
       <p>Hello! We have the following products for sale today:</p>
       <ul>
-        <li>Tenderloin</li>
-        <li>Short ribs</li>
-        <li>Beef shin</li>
-        <li>Ribeye</li>
+        { products }
       </ul>
     </div>
     )
