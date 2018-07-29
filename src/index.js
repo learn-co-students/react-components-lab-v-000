@@ -35,16 +35,20 @@ export class InFrontOfYou extends Component {
   }
 }
 
+const products = [
+  <li>{BUTCHER_PRODUCTS[0]}</li>,
+  <li>{BUTCHER_PRODUCTS[1]}</li>,
+  <li>{BUTCHER_PRODUCTS[2]}</li>,
+  <li>{BUTCHER_PRODUCTS[3]}</li>
+]
+
 export class ButcherShop extends Component {
   render() {
     return (
       <div class="butcher-shop">
         <p>Hello! We have the following products for sale today:</p>
         <ul>
-          <li>Tenderloin</li>
-          <li>Short ribs</li>
-          <li>Beef shin</li>
-          <li>Ribeye</li>
+          { products }
         </ul>
       </div>
     )
