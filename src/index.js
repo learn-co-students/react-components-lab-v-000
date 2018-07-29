@@ -10,7 +10,6 @@ const BUTCHER_PRODUCTS = [
 
 // Define these exported classes
 export class OlderCoaster extends Component {
-
   render() {
     return (
       <div class="oldercoaster">
@@ -23,11 +22,9 @@ export class OlderCoaster extends Component {
       </div>
     )
   }
-
 }
 
 export class InFrontOfYou extends Component {
-  // your code here
   render() {
     return (
       <div>
@@ -37,8 +34,8 @@ export class InFrontOfYou extends Component {
     )
   }
 }
+
 export class ButcherShop extends Component {
-  // your code here
   render() {
     return (
       <div class="butcher-shop">
@@ -53,6 +50,7 @@ export class ButcherShop extends Component {
     )
   }
 }
+
 export class App extends Component {
   render() {
     return (
@@ -64,4 +62,4 @@ export class App extends Component {
     )
   }
 }
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App/>, document.getElementById('root'))
