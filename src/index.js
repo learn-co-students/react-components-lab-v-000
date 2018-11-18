@@ -14,7 +14,7 @@ export class OlderCoaster extends Component {
   // this function should return the JSX we want the DOM to render
   render() {
     return (
-      <div class="oldercoaster">
+      <div className="oldercoaster">
         <p>Two grannies having the time of their life!</p>
         <p>Passengers:</p>
         <ul>
@@ -41,9 +41,9 @@ export class InFrontOfYou extends Component {
 export class ButcherShop extends Component {
   // your code here
   render() {
-    const products = BUTCHER_PRODUCTS.map((product,index) => {<li>product[index]</li>})
+    const products = BUTCHER_PRODUCTS.map((product,index) => (<li key={index}>{product}</li>))
     return (
-      <div class="butcher-shop">
+      <div className="butcher-shop">
         <p>Hello! We have the following products for sale today:</p>
         <ul>
           {products}
@@ -58,7 +58,9 @@ export class App extends Component {
   render() {
     return (
       <div id="app">
-
+        < OlderCoaster />
+        < ButcherShop />
+        < InFrontOfYou />
       </div>
     )
   }
