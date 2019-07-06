@@ -78,6 +78,7 @@ render the following HTML:
 </div>
 ```
 
+
 With this component, we want to render the products from the `BUTCHER_PRODUCTS`
 array already at the top of the `index.js` file. React supports the rendering of
 arrays filled with valid JSX, i.e.:
